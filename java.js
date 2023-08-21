@@ -395,4 +395,72 @@ let n9=5
 for (let i = 0; i < n9; i++) {
   
   console.log(2*i);
+
+
 }
+
+///////////////////////////////////////////////
+// test case 01:
+let a031 = [12, 13, 18, 19, 20];
+let b031 = ["HELLO", "ARRAY", "OBJECT", "FUNCTION"];
+
+console.log(a031.concat (b031));
+
+
+
+
+for (let index = 0; index < 21; index++) {
+  if (index % 3 === 0) {
+      console.log(`The ${index} is divisible by 3`);
+  }else if (index % 5 === 0) {
+      console.log(`The ${index} is divsible by 5`);
+  }
+}
+////////////////////////////////////////////////////////////////////////////
+
+function xyz (){
+  const abc =[1,2,3,4,5,6,7,8]
+  const a=[]
+  const b=[]
+for (let index = 0; index < abc.length; index++) {
+  
+  if (index %2===0) a.push(index)
+    
+  else b.push(index)
+}
+console.log(a,b);
+}
+xyz()
+
+//////////////////////////////////////////////
+// test case 01:
+let arr041 = ["Hello", 12, 23, "Bye", 43, "32", "32.44", 32, "Name"];
+
+// write your code here ...
+let type1 = [] , type2 = [];
+for (let index = 0; index < arr041.length; index++) {
+    if (typeof arr041[index] === "number") 
+        type1.push(arr041[index])
+    else{type2.push(arr041[index])}
+}
+console.log(type1);
+console.log(type2);
+
+///////////////////////////////////////////////////////////
+
+
+const ab =[1,2,3,4,5,6,7,8]
+
+const abcd= ab.filter((o)=>{
+  return (o %2 ===0)
+})
+console.log(abcd );
+
+
+
+///////////////////////////////////////////////////
+
+
+
+let str = "Apple, Banana, Kiwi";
+console.log(str.slice(6));
